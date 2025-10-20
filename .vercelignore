@@ -1,0 +1,13 @@
+/node_modules
+/storage/logs
+/storage/framework/cache
+/storage/framework/sessions
+/storage/framework/views
+/tests
+/.phpunit.result.cache
+/backup
+.env.local
+.env.testing
+*.log
+/vendor/bin
+/bootstrap/cache/*.php

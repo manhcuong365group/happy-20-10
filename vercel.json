@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "app/index.php": {
+      "runtime": "vercel-php@0.7.0"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app/index.php"
+    }
+  ],
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "APP_URL": "https://your-vercel-domain.vercel.app",
+    "LOG_CHANNEL": "stderr"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "name": "happy-20-10",
+    "version": "1.0.0",
+    "description": "Website chúc mừng ngày Phụ nữ Việt Nam 20/10",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "vercel-build": "composer install --optimize-autoloader --no-dev && php artisan config:cache && php artisan route:cache && vite build"
+    },
+    "engines": {
+        "node": "18.x"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.0.0",
+        "axios": "^1.11.0",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^2.0.0",
+        "tailwindcss": "^4.0.0",
+        "vite": "^7.0.7"
+    }
+}

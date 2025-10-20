@@ -1,0 +1,65 @@
+{
+  "name": "Happy 20/10 - Website chúc mừng ngày Phụ nữ Việt Nam",
+  "version": "1.0.0",
+  "description": "Website Laravel chúc mừng ngày Phụ nữ Việt Nam 20/10 với thiết kế đẹp mắt và nhiều hiệu ứng tương tác",
+  "author": "Developer",
+  "scripts": {
+    "dev": "php artisan serve",
+    "build": "php artisan optimize",
+    "fresh": "php artisan migrate:fresh --seed"
+  },
+  "features": {
+    "homepage": "Trang chủ với lời chúc và hiệu ứng đẹp mắt",
+    "gallery": "Thư viện ảnh với 6 chủ đề về phụ nữ Việt Nam",
+    "wishes": "Tính năng gửi và xem lời chúc tương tác",
+    "about": "Thông tin về lịch sử và ý nghĩa ngày 20/10",
+    "effects": "Nhiều hiệu ứng visual như trái tim bay, sparkle effect",
+    "responsive": "Thiết kế responsive hoàn toàn cho mọi thiết bị"
+  },
+  "tech_stack": {
+    "backend": "Laravel 12.x",
+    "frontend": "Bootstrap 5.3 + Font Awesome 6.4",
+    "database": "SQLite (có thể thay đổi)",
+    "styling": "CSS3 với animations",
+    "javascript": "Vanilla JS"
+  },
+  "urls": {
+    "homepage": "/",
+    "gallery": "/gallery",
+    "wishes": "/wishes",
+    "about": "/about",
+    "api": {
+      "random_wish": "/random-wish"
+    }
+  },
+  "deployment": {
+    "requirements": {
+      "php": ">=8.1",
+      "composer": "latest",
+      "extensions": ["mbstring", "xml", "ctype", "json", "bcmath", "pdo"]
+    },
+    "steps": [
+      "composer install --optimize-autoloader --no-dev",
+      "php artisan key:generate",
+      "php artisan migrate --force",
+      "php artisan optimize",
+      "php artisan config:cache",
+      "php artisan route:cache",
+      "php artisan view:cache"
+    ]
+  },
+  "customization": {
+    "colors": {
+      "primary": "#ff6b9d",
+      "secondary": "#ff8cc8",
+      "accent": "#ff4d6d"
+    },
+    "files": {
+      "main_controller": "app/Http/Controllers/Happy2010Controller.php",
+      "layout": "resources/views/layouts/app.blade.php",
+      "homepage": "resources/views/happy-20-10.blade.php",
+      "custom_css": "public/css/custom.css",
+      "custom_js": "public/js/app.js"
+    }
+  }
+}
