@@ -5,14 +5,47 @@
 function getRandomWish()
 {
     $wishes = [
-        "Chúc chị luôn xinh đẹp, hạnh phúc và thành công! 🌸",
-        "20/10 này chúc chị luôn tươi trẻ và rạng rỡ! ✨",
-        "Gửi chị những lời chúc tốt đẹp nhất nhân ngày Phụ nữ Việt Nam! 💐",
-        "Chúc chị có một ngày 20/10 thật ý nghĩa và vui vẻ! 🌺",
-        "Mong chị luôn được yêu thương và che chở! 💖",
-        "Chúc chị luôn mạnh khỏe và gặp nhiều may mắn! 🍀",
-        "20/10 - Ngày của những người phụ nữ tuyệt vời như chị! 👸",
-        "Chúc chị luôn tự tin và tỏa sáng! ⭐"
+        // Lời chúc về vẻ đẹp
+        "Chúc chị mãi mãi xinh đẹp như hoa sen trong nắng mai! 🌸",
+        "20/10 này, chúc chị luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
+        "Mong chị luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc! ✨",
+        "Chúc chị có làn da mịn màng như cánh hoa và nụ cười tỏa nắng! 😊",
+        
+        // Lời chúc về hạnh phúc
+        "Chúc chị có một trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
+        "Mong chị được bao quanh bởi tình yêu thương và sự che chở! 🤗",
+        "20/10 - Ngày để chị được yêu thương và được trân trọng như một nàng công chúa! �",
+        "Chúc chị luôn có những khoảnh khắc ngọt ngào bên gia đình và bạn bè! 👨‍👩‍👧‍👦",
+        
+        // Lời chúc về sự nghiệp
+        "Chúc chị thành công rực rỡ trong sự nghiệp và cuộc sống! �",
+        "Mong chị đạt được tất cả những ước mơ và hoài bão trong lòng! ⭐",
+        "Chúc chị luôn tự tin chinh phục mọi đỉnh cao trong cuộc sống! 🚀",
+        "20/10 này, chúc chị trở thành phiên bản tốt nhất của chính mình! �",
+        
+        // Lời chúc về sức khỏe
+        "Chúc chị luôn mạnh khỏe, tràn đầy năng lượng tích cực! 🌟",
+        "Mong chị có sức khỏe dẻo dai như cây tre Việt Nam! 🎋",
+        "Chúc chị luôn khỏe mạnh để yêu thương và chăm sóc những người xung quanh! ❤️",
+        
+        // Lời chúc về may mắn
+        "Chúc chị gặp nhiều may mắn và thuận lợi trên mọi nẻo đường! 🍀",
+        "Mong chị luôn được thần may mắn chiếu cố và phù hộ! 🌈",
+        "20/10 - Chúc chị có những điều bất ngờ tuyệt vời trong cuộc sống! 🎁",
+        
+        // Lời chúc đặc biệt và ý nghĩa
+        "Phụ nữ như chị chính là món quà quý giá nhất của cuộc đời! 💎",
+        "Chúc chị mãi mãi là nguồn cảm hứng và động lực cho mọi người xung quanh! 🌺",
+        "20/10 - Ngày tôn vinh vẻ đẹp, trí tuệ và nhân cách tuyệt vời của chị! 🌹",
+        "Mong chị luôn tự hào về bản thân và giá trị to lớn mà chị mang lại! �",
+        "Chúc chị là ánh sáng ấm áp, lan tỏa yêu thương đến mọi nơi! 🕯️",
+        "Phụ nữ Việt Nam như chị chính là niềm tự hào của dân tộc! 🇻🇳",
+        
+        // Lời chúc thơ mộng
+        "Như cánh hoa anh đào bay trong gió, chúc chị luôn nhẹ nhàng và duyên dáng! 🌸",
+        "Chúc chị có cuộc sống ngọt ngào như mật ong và thơm như hoa nhài! 🍯",
+        "Mong chị luôn tỏa sáng như ngôi sao sáng nhất trên bầu trời đêm! ⭐",
+        "20/10 - Chúc chị có trái tim ấm áp như mặt trời và tâm hồn trong veo như suối nguồn! 🌞"
     ];
     return $wishes[array_rand($wishes)];
 }
@@ -137,6 +170,19 @@ if ($page === 'random-wish') {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(255, 20, 147, 0.3);
             color: white;
+        }
+
+        .btn-outline-pink {
+            border: 2px solid #ff1493;
+            color: #ff1493;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-pink:hover {
+            background: #ff1493;
+            border-color: #ff1493;
+            color: white;
+            transform: translateY(-2px);
         }
 
         .navbar {
@@ -364,8 +410,60 @@ if ($page === 'random-wish') {
                                         </div>
                                     </div>
 
+                                    <div class="row mb-4">
+                                        <div class="col-md-12 text-center">
+                                            <h6 class="text-muted mb-3">Chọn chủ đề lời chúc:</h6>
+                                            <div class="btn-group-vertical btn-group-lg d-md-none">
+                                                <button class="btn btn-outline-pink mb-2" onclick="getWishByTheme('beauty')">
+                                                    <i class="fas fa-flower me-2"></i>Vẻ đẹp
+                                                </button>
+                                                <button class="btn btn-outline-success mb-2" onclick="getWishByTheme('happiness')">
+                                                    <i class="fas fa-heart me-2"></i>Hạnh phúc
+                                                </button>
+                                                <button class="btn btn-outline-warning mb-2" onclick="getWishByTheme('success')">
+                                                    <i class="fas fa-trophy me-2"></i>Thành công
+                                                </button>
+                                                <button class="btn btn-outline-info mb-2" onclick="getWishByTheme('health')">
+                                                    <i class="fas fa-leaf me-2"></i>Sức khỏe
+                                                </button>
+                                                <button class="btn btn-outline-primary mb-2" onclick="getWishByTheme('luck')">
+                                                    <i class="fas fa-clover me-2"></i>May mắn
+                                                </button>
+                                                <button class="btn btn-outline-secondary mb-2" onclick="getWishByTheme('special')">
+                                                    <i class="fas fa-crown me-2"></i>Đặc biệt
+                                                </button>
+                                                <button class="btn btn-outline-dark mb-2" onclick="getWishByTheme('poetic')">
+                                                    <i class="fas fa-feather me-2"></i>Thơ mộng
+                                                </button>
+                                            </div>
+                                            <div class="d-none d-md-block">
+                                                <button class="btn btn-outline-pink btn-sm me-2 mb-2" onclick="getWishByTheme('beauty')">
+                                                    <i class="fas fa-flower me-1"></i>Vẻ đẹp
+                                                </button>
+                                                <button class="btn btn-outline-success btn-sm me-2 mb-2" onclick="getWishByTheme('happiness')">
+                                                    <i class="fas fa-heart me-1"></i>Hạnh phúc
+                                                </button>
+                                                <button class="btn btn-outline-warning btn-sm me-2 mb-2" onclick="getWishByTheme('success')">
+                                                    <i class="fas fa-trophy me-1"></i>Thành công
+                                                </button>
+                                                <button class="btn btn-outline-info btn-sm me-2 mb-2" onclick="getWishByTheme('health')">
+                                                    <i class="fas fa-leaf me-1"></i>Sức khỏe
+                                                </button>
+                                                <button class="btn btn-outline-primary btn-sm me-2 mb-2" onclick="getWishByTheme('luck')">
+                                                    <i class="fas fa-clover me-1"></i>May mắn
+                                                </button>
+                                                <button class="btn btn-outline-secondary btn-sm me-2 mb-2" onclick="getWishByTheme('special')">
+                                                    <i class="fas fa-crown me-1"></i>Đặc biệt
+                                                </button>
+                                                <button class="btn btn-outline-dark btn-sm me-2 mb-2" onclick="getWishByTheme('poetic')">
+                                                    <i class="fas fa-feather me-1"></i>Thơ mộng
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <button class="btn btn-pink btn-lg me-3" onclick="getNewWish()">
-                                        <i class="fas fa-magic me-2"></i>Lời chúc mới
+                                        <i class="fas fa-magic me-2"></i>Lời chúc ngẫu nhiên
                                     </button>
 
                                     <a href="?page=gallery" class="btn btn-outline-danger btn-lg">
@@ -420,18 +518,111 @@ if ($page === 'random-wish') {
         // Lấy lời chúc ngẫu nhiên
         function getNewWish() {
             const wishes = [
-                "Chúc chị luôn xinh đẹp, hạnh phúc và thành công! 🌸",
-                "20/10 này chúc chị luôn tươi trẻ và rạng rỡ! ✨",
-                "Gửi chị những lời chúc tốt đẹp nhất nhân ngày Phụ nữ Việt Nam! 💐",
-                "Chúc chị có một ngày 20/10 thật ý nghĩa và vui vẻ! 🌺",
-                "Mong chị luôn được yêu thương và che chở! 💖",
-                "Chúc chị luôn mạnh khỏe và gặp nhiều may mắn! 🍀",
-                "20/10 - Ngày của những người phụ nữ tuyệt vời như chị! 👸",
-                "Chúc chị luôn tự tin và tỏa sáng! ⭐"
+                // Lời chúc về vẻ đẹp
+                "Chúc chị mãi mãi xinh đẹp như hoa sen trong nắng mai! 🌸",
+                "20/10 này, chúc chị luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
+                "Mong chị luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc! ✨",
+                "Chúc chị có làn da mịn màng như cánh hoa và nụ cười tỏa nắng! 😊",
+                
+                // Lời chúc về hạnh phúc
+                "Chúc chị có một trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
+                "Mong chị được bao quanh bởi tình yêu thương và sự che chở! 🤗",
+                "20/10 - Ngày để chị được yêu thương và được trân trọng như một nàng công chúa! �",
+                "Chúc chị luôn có những khoảnh khắc ngọt ngào bên gia đình và bạn bè! 👨‍👩‍👧‍👦",
+                
+                // Lời chúc về sự nghiệp
+                "Chúc chị thành công rực rỡ trong sự nghiệp và cuộc sống! �",
+                "Mong chị đạt được tất cả những ước mơ và hoài bão trong lòng! ⭐",
+                "Chúc chị luôn tự tin chinh phục mọi đỉnh cao trong cuộc sống! 🚀",
+                "20/10 này, chúc chị trở thành phiên bản tốt nhất của chính mình! �",
+                
+                // Lời chúc về sức khỏe
+                "Chúc chị luôn mạnh khỏe, tràn đầy năng lượng tích cực! 🌟",
+                "Mong chị có sức khỏe dẻo dai như cây tre Việt Nam! 🎋",
+                "Chúc chị luôn khỏe mạnh để yêu thương và chăm sóc những người xung quanh! ❤️",
+                
+                // Lời chúc về may mắn
+                "Chúc chị gặp nhiều may mắn và thuận lợi trên mọi nẻo đường! 🍀",
+                "Mong chị luôn được thần may mắn chiếu cố và phù hộ! 🌈",
+                "20/10 - Chúc chị có những điều bất ngờ tuyệt vời trong cuộc sống! 🎁",
+                
+                // Lời chúc đặc biệt và ý nghĩa
+                "Phụ nữ như chị chính là món quà quý giá nhất của cuộc đời! 💎",
+                "Chúc chị mãi mãi là nguồn cảm hứng và động lực cho mọi người xung quanh! 🌺",
+                "20/10 - Ngày tôn vinh vẻ đẹp, trí tuệ và nhân cách tuyệt vời của chị! 🌹",
+                "Mong chị luôn tự hào về bản thân và giá trị to lớn mà chị mang lại! �",
+                "Chúc chị là ánh sáng ấm áp, lan tỏa yêu thương đến mọi nơi! 🕯️",
+                "Phụ nữ Việt Nam như chị chính là niềm tự hào của dân tộc! 🇻🇳",
+                
+                // Lời chúc thơ mộng
+                "Như cánh hoa anh đào bay trong gió, chúc chị luôn nhẹ nhàng và duyên dáng! 🌸",
+                "Chúc chị có cuộc sống ngọt ngào như mật ong và thơm như hoa nhài! 🍯",
+                "Mong chị luôn tỏa sáng như ngôi sao sáng nhất trên bầu trời đêm! ⭐",
+                "20/10 - Chúc chị có trái tim ấm áp như mặt trời và tâm hồn trong veo như suối nguồn! 🌞"
             ];
 
             const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
             document.getElementById('random-wish').innerHTML = randomWish;
+        }
+
+        // Lấy lời chúc theo chủ đề
+        function getWishByTheme(theme) {
+            const allWishes = {
+                beauty: [
+                    "Chúc chị mãi mãi xinh đẹp như hoa sen trong nắng mai! 🌸",
+                    "20/10 này, chúc chị luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
+                    "Mong chị luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc! ✨",
+                    "Chúc chị có làn da mịn màng như cánh hoa và nụ cười tỏa nắng! 😊"
+                ],
+                happiness: [
+                    "Chúc chị có một trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
+                    "Mong chị được bao quanh bởi tình yêu thương và sự che chở! 🤗",
+                    "20/10 - Ngày để chị được yêu thương và được trân trọng như một nàng công chúa! 👸",
+                    "Chúc chị luôn có những khoảnh khắc ngọt ngào bên gia đình và bạn bè! 👨‍👩‍👧‍👦"
+                ],
+                success: [
+                    "Chúc chị thành công rực rỡ trong sự nghiệp và cuộc sống! 🏆",
+                    "Mong chị đạt được tất cả những ước mơ và hoài bão trong lòng! ⭐",
+                    "Chúc chị luôn tự tin chinh phục mọi đỉnh cao trong cuộc sống! 🚀",
+                    "20/10 này, chúc chị trở thành phiên bản tốt nhất của chính mình! 💪"
+                ],
+                health: [
+                    "Chúc chị luôn mạnh khỏe, tràn đầy năng lượng tích cực! 🌟",
+                    "Mong chị có sức khỏe dẻo dai như cây tre Việt Nam! 🎋",
+                    "Chúc chị luôn khỏe mạnh để yêu thương và chăm sóc những người xung quanh! ❤️"
+                ],
+                luck: [
+                    "Chúc chị gặp nhiều may mắn và thuận lợi trên mọi nẻo đường! 🍀",
+                    "Mong chị luôn được thần may mắn chiếu cố và phù hộ! 🌈",
+                    "20/10 - Chúc chị có những điều bất ngờ tuyệt vời trong cuộc sống! 🎁"
+                ],
+                special: [
+                    "Phụ nữ như chị chính là món quà quý giá nhất của cuộc đời! 💎",
+                    "Chúc chị mãi mãi là nguồn cảm hứng và động lực cho mọi người xung quanh! 🌺",
+                    "20/10 - Ngày tôn vinh vẻ đẹp, trí tuệ và nhân cách tuyệt vời của chị! 🌹",
+                    "Mong chị luôn tự hào về bản thân và giá trị to lớn mà chị mang lại! 👑",
+                    "Chúc chị là ánh sáng ấm áp, lan tỏa yêu thương đến mọi nơi! 🕯️",
+                    "Phụ nữ Việt Nam như chị chính là niềm tự hào của dân tộc! 🇻🇳"
+                ],
+                poetic: [
+                    "Như cánh hoa anh đào bay trong gió, chúc chị luôn nhẹ nhàng và duyên dáng! 🌸",
+                    "Chúc chị có cuộc sống ngọt ngào như mật ong và thơm như hoa nhài! 🍯",
+                    "Mong chị luôn tỏa sáng như ngôi sao sáng nhất trên bầu trời đêm! ⭐",
+                    "20/10 - Chúc chị có trái tim ấm áp như mặt trời và tâm hồn trong veo như suối nguồn! 🌞"
+                ]
+            };
+
+            const themeWishes = allWishes[theme] || allWishes.special;
+            const randomWish = themeWishes[Math.floor(Math.random() * themeWishes.length)];
+            document.getElementById('random-wish').innerHTML = randomWish;
+
+            // Thêm hiệu ứng
+            const wishElement = document.getElementById('random-wish');
+            wishElement.style.transform = 'scale(0.9)';
+            wishElement.style.transition = 'transform 0.3s ease';
+            setTimeout(() => {
+                wishElement.style.transform = 'scale(1)';
+            }, 150);
         }
 
         // Khởi tạo hiệu ứng
