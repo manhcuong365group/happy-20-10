@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "index.php",
@@ -7,8 +8,36 @@
   ],
   "routes": [
     {
+      "src": "^/css/(.*)",
+      "dest": "/public/css/$1"
+    },
+    {
+      "src": "^/js/(.*)",
+      "dest": "/public/js/$1"
+    },
+    {
+      "src": "^/images/(.*)",
+      "dest": "/public/images/$1"
+    },
+    {
+      "src": "^/storage/(.*)",
+      "dest": "/storage/app/public/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.php"
     }
-  ]
+  ],
+  "env": {
+    "APP_NAME": "Happy 20/10",
+    "APP_ENV": "production",
+    "APP_KEY": "base64:da0ijGQL44vms/W7W7IjrFiFUCsXta6jS3AZ8sBhE7Q=",
+    "APP_DEBUG": "false",
+    "APP_URL": "https://happy-20-10-seven.vercel.app",
+    "DB_CONNECTION": "sqlite",
+    "DB_DATABASE": "/tmp/database.sqlite",
+    "LOG_CHANNEL": "stderr",
+    "SESSION_DRIVER": "cookie",
+    "CACHE_STORE": "array"
+  }
 }

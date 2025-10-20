@@ -4,6 +4,12 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+// Create SQLite database if not exists (for Vercel)
+$dbPath = '/tmp/database.sqlite';
+if (!file_exists($dbPath)) {
+    touch($dbPath);
+}
+
 // Determine if the application is in maintenance mode
 if (file_exists($maintenance = __DIR__ . '/storage/framework/maintenance.php')) {
     require $maintenance;
