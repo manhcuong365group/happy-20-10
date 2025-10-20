@@ -18,6 +18,8 @@ Mặc dù đã sửa `vercel.json` nhưng Vercel vẫn nhớ cấu hình cũ v�
 4. **Root Directory**: Để trống
 5. Click **Deploy**
 
+⚠️ **LƯU Ý**: vercel.json đã được cập nhật sử dụng `vercel-php@0.8.0` thay vì `0.7.0` để tương thích với Node.js mới nhất.
+
 ### Bước 3: Thêm Environment Variables
 Ngay sau khi deploy, vào **Settings** → **Environment Variables**:
 
