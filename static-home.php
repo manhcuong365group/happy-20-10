@@ -260,14 +260,14 @@
         // Lấy lời chúc ngẫu nhiên
         async function getNewWish() {
             const wishes = [
-                "Chúc chị luôn xinh đẹp, hạnh phúc và thành công! 🌸",
-                "20/10 này chúc chị luôn tươi trẻ và rạng rỡ! ✨",
-                "Gửi chị những lời chúc tốt đẹp nhất nhân ngày Phụ nữ Việt Nam! 💐",
-                "Chúc chị có một ngày 20/10 thật ý nghĩa và vui vẻ! 🌺",
-                "Mong chị luôn được yêu thương và che chở! 💖",
-                "Chúc chị luôn mạnh khỏe và gặp nhiều may mắn! 🍀",
-                "20/10 - Ngày của những người phụ nữ tuyệt vời như chị! 👸",
-                "Chúc chị luôn tự tin và tỏa sáng! ⭐"
+                "Chúc BÉ ÊU luôn xinh đẹp, hạnh phúc và thành công! 🌸",
+                "20/10 này chúc BÉ ÊU luôn tươi trẻ và rạng rỡ! ✨",
+                "Gửi BÉ ÊU những lời chúc tốt đẹp nhất nhân ngày Phụ nữ Việt Nam! 💐",
+                "Chúc BÉ ÊU có một ngày 20/10 thật ý nghĩa và vui vẻ! 🌺",
+                "Mong BÉ ÊU luôn được yêu thương và che chở! 💖",
+                "Chúc BÉ ÊU luôn mạnh khỏe và gặp nhiều may mắn! 🍀",
+                "20/10 - Ngày của những người phụ nữ tuyệt vời như BÉ ÊU! 👸",
+                "Chúc BÉ ÊU luôn tự tin và tỏa sáng! ⭐"
             ];
 
             const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
