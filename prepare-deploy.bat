@@ -56,7 +56,7 @@ echo.
 echo 📋 BƯỚC TIẾP THEO:
 echo 1. Tạo Git repository: git init ^&^& git add . ^&^& git commit -m "Initial commit"
 echo 2. Push lên GitHub
-echo 3. Import vào Vercel từ GitHub  
+echo 3. Import vào Vercel từ GitHub
 echo 4. Cấu hình Environment Variables trong Vercel
 echo.
 echo 🔗 Chi tiết xem file DEPLOY_GUIDE.md
