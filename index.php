@@ -5,47 +5,51 @@
 function getRandomWish()
 {
     $wishes = [
-        // Lời chúc về vẻ đẹp
-        "Chúc chị mãi mãi xinh đẹp như hoa sen trong nắng mai! 🌸",
-        "20/10 này, chúc chị luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
-        "Mong chị luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc! ✨",
-        "Chúc chị có làn da mịn màng như cánh hoa và nụ cười tỏa nắng! 😊",
-        
-        // Lời chúc về hạnh phúc
-        "Chúc chị có một trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
-        "Mong chị được bao quanh bởi tình yêu thương và sự che chở! 🤗",
-        "20/10 - Ngày để chị được yêu thương và được trân trọng như một nàng công chúa! �",
-        "Chúc chị luôn có những khoảnh khắc ngọt ngào bên gia đình và bạn bè! 👨‍👩‍👧‍👦",
-        
+        // Lời chúc về vẻ đẹp - văn phòng
+        "Chúc các chị em trong văn phòng luôn xinh đẹp như hoa sen trong nắng mai! 🌸",
+        "20/10 này, chúc chị em luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
+        "Mong các chị em luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc làm việc! ✨",
+        "Chúc chị em có nụ cười tỏa nắng làm ấm áp cả không gian văn phòng! 😊",
+
+        // Lời chúc về hạnh phúc - đồng nghiệp
+        "Chúc các chị em có trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
+        "Mong chị em được bao quanh bởi tình đồng nghiệp thân thiết và yêu thương! 🤗",
+        "20/10 - Ngày để các chị em được trân trọng như những nàng công chúa trong văn phòng! 👸",
+        "Chúc chị em luôn có những khoảnh khắc vui vẻ bên đồng nghiệp và gia đình! 👨‍👩‍👧‍👦",
+
         // Lời chúc về sự nghiệp
-        "Chúc chị thành công rực rỡ trong sự nghiệp và cuộc sống! �",
-        "Mong chị đạt được tất cả những ước mơ và hoài bão trong lòng! ⭐",
-        "Chúc chị luôn tự tin chinh phục mọi đỉnh cao trong cuộc sống! 🚀",
-        "20/10 này, chúc chị trở thành phiên bản tốt nhất của chính mình! �",
-        
+        "Chúc các chị em thành công rực rỡ trong công việc và thăng tiến không ngừng! 🏆",
+        "Mong chị em đạt được tất cả mục tiêu nghề nghiệp và ước mơ trong lòng! ⭐",
+        "Chúc chị em luôn tự tin chinh phục mọi thử thách trong công việc! 🚀",
+        "20/10 này, chúc chị em trở thành phiên bản chuyên nghiệp nhất của chính mình! 💪",
+
         // Lời chúc về sức khỏe
-        "Chúc chị luôn mạnh khỏe, tràn đầy năng lượng tích cực! 🌟",
-        "Mong chị có sức khỏe dẻo dai như cây tre Việt Nam! 🎋",
-        "Chúc chị luôn khỏe mạnh để yêu thương và chăm sóc những người xung quanh! ❤️",
-        
+        "Chúc các chị em luôn mạnh khỏe để làm việc hiệu quả và vui vẻ! 🌟",
+        "Mong chị em có sức khỏe dẻo dai, không bị stress công việc! 🎋",
+        "Chúc chị em cân bằng tốt giữa công việc và sức khỏe! ❤️",
+
         // Lời chúc về may mắn
-        "Chúc chị gặp nhiều may mắn và thuận lợi trên mọi nẻo đường! 🍀",
-        "Mong chị luôn được thần may mắn chiếu cố và phù hộ! 🌈",
-        "20/10 - Chúc chị có những điều bất ngờ tuyệt vời trong cuộc sống! 🎁",
-        
-        // Lời chúc đặc biệt và ý nghĩa
-        "Phụ nữ như chị chính là món quà quý giá nhất của cuộc đời! 💎",
-        "Chúc chị mãi mãi là nguồn cảm hứng và động lực cho mọi người xung quanh! 🌺",
-        "20/10 - Ngày tôn vinh vẻ đẹp, trí tuệ và nhân cách tuyệt vời của chị! 🌹",
+        "Chúc các chị em gặp nhiều may mắn và cơ hội tốt trong công việc! 🍀",
+        "Mong chị em luôn được sếp và đồng nghiệp quý mến! 🌈",
+        "20/10 - Chúc chị em có những bất ngờ tuyệt vời như tăng lương, thăng chức! 🎁",
+
+        // Lời chúc đặc biệt về công việc
+        "Các chị em chính là những viên ngọc quý làm rạng danh công ty! 💎",
+        "Chúc chị em mãi là nguồn cảm hứng và năng lượng tích cực cho team! 🌺",
+        "20/10 - Ngày tôn vinh trí tuệ và tài năng của các chị em trong văn phòng! 🌹",
         "Mong chị luôn tự hào về bản thân và giá trị to lớn mà chị mang lại! �",
-        "Chúc chị là ánh sáng ấm áp, lan tỏa yêu thương đến mọi nơi! 🕯️",
-        "Phụ nữ Việt Nam như chị chính là niềm tự hào của dân tộc! 🇻🇳",
-        
-        // Lời chúc thơ mộng
-        "Như cánh hoa anh đào bay trong gió, chúc chị luôn nhẹ nhàng và duyên dáng! 🌸",
-        "Chúc chị có cuộc sống ngọt ngào như mật ong và thơm như hoa nhài! 🍯",
-        "Mong chị luôn tỏa sáng như ngôi sao sáng nhất trên bầu trời đêm! ⭐",
-        "20/10 - Chúc chị có trái tim ấm áp như mặt trời và tâm hồn trong veo như suối nguồn! 🌞"
+        "Chúc chị em lan tỏa năng lượng tích cực đến toàn bộ văn phòng! 🕯️",
+        "Phụ nữ văn phòng như các chị em chính là trụ cột của công ty! �",
+
+        // Lời chúc thơ mộng - văn phòng
+        "Như cánh hoa anh đào, chúc chị em luôn nhẹ nhàng xử lý mọi công việc! 🌸",
+        "Chúc chị em có những ngày làm việc ngọt ngào và thành quả như mật ong! 🍯",
+        "Mong chị em tỏa sáng như ngôi sao trong team work! ⭐",
+        "20/10 - Chúc chị em có tinh thần ấm áp như mặt trời soi sáng văn phòng! 🌞",
+
+        // Lời chúc đặc biệt cho đồng nghiệp
+        "Cảm ơn các chị em đã làm văn phòng trở nên ấm áp và thân thiện! 💝",
+        "Chúc chị em luôn là pride của team và niềm tự hào của công ty! �"
     ];
     return $wishes[array_rand($wishes)];
 }
@@ -378,7 +382,7 @@ if ($page === 'random-wish') {
                                 <div class="wish-card">
                                     <h3 class="text-pink mb-4">
                                         <i class="fas fa-heart text-danger me-2"></i>
-                                        Gửi tặng những người phụ nữ tuyệt vời
+                                        Gửi tặng các chị em trong văn phòng
                                         <i class="fas fa-heart text-danger ms-2"></i>
                                     </h3>
 
@@ -523,29 +527,29 @@ if ($page === 'random-wish') {
                 "20/10 này, chúc chị luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
                 "Mong chị luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc! ✨",
                 "Chúc chị có làn da mịn màng như cánh hoa và nụ cười tỏa nắng! 😊",
-                
+
                 // Lời chúc về hạnh phúc
                 "Chúc chị có một trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
                 "Mong chị được bao quanh bởi tình yêu thương và sự che chở! 🤗",
                 "20/10 - Ngày để chị được yêu thương và được trân trọng như một nàng công chúa! �",
                 "Chúc chị luôn có những khoảnh khắc ngọt ngào bên gia đình và bạn bè! 👨‍👩‍👧‍👦",
-                
+
                 // Lời chúc về sự nghiệp
                 "Chúc chị thành công rực rỡ trong sự nghiệp và cuộc sống! �",
                 "Mong chị đạt được tất cả những ước mơ và hoài bão trong lòng! ⭐",
                 "Chúc chị luôn tự tin chinh phục mọi đỉnh cao trong cuộc sống! 🚀",
                 "20/10 này, chúc chị trở thành phiên bản tốt nhất của chính mình! �",
-                
+
                 // Lời chúc về sức khỏe
                 "Chúc chị luôn mạnh khỏe, tràn đầy năng lượng tích cực! 🌟",
                 "Mong chị có sức khỏe dẻo dai như cây tre Việt Nam! 🎋",
                 "Chúc chị luôn khỏe mạnh để yêu thương và chăm sóc những người xung quanh! ❤️",
-                
+
                 // Lời chúc về may mắn
                 "Chúc chị gặp nhiều may mắn và thuận lợi trên mọi nẻo đường! 🍀",
                 "Mong chị luôn được thần may mắn chiếu cố và phù hộ! 🌈",
                 "20/10 - Chúc chị có những điều bất ngờ tuyệt vời trong cuộc sống! 🎁",
-                
+
                 // Lời chúc đặc biệt và ý nghĩa
                 "Phụ nữ như chị chính là món quà quý giá nhất của cuộc đời! 💎",
                 "Chúc chị mãi mãi là nguồn cảm hứng và động lực cho mọi người xung quanh! 🌺",
@@ -553,7 +557,7 @@ if ($page === 'random-wish') {
                 "Mong chị luôn tự hào về bản thân và giá trị to lớn mà chị mang lại! �",
                 "Chúc chị là ánh sáng ấm áp, lan tỏa yêu thương đến mọi nơi! 🕯️",
                 "Phụ nữ Việt Nam như chị chính là niềm tự hào của dân tộc! 🇻🇳",
-                
+
                 // Lời chúc thơ mộng
                 "Như cánh hoa anh đào bay trong gió, chúc chị luôn nhẹ nhàng và duyên dáng! 🌸",
                 "Chúc chị có cuộc sống ngọt ngào như mật ong và thơm như hoa nhài! 🍯",
@@ -569,46 +573,46 @@ if ($page === 'random-wish') {
         function getWishByTheme(theme) {
             const allWishes = {
                 beauty: [
-                    "Chúc chị mãi mãi xinh đẹp như hoa sen trong nắng mai! 🌸",
-                    "20/10 này, chúc chị luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
-                    "Mong chị luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc! ✨",
-                    "Chúc chị có làn da mịn màng như cánh hoa và nụ cười tỏa nắng! 😊"
+                    "Chúc các chị em trong văn phòng luôn xinh đẹp như hoa sen trong nắng mai! 🌸",
+                    "20/10 này, chúc chị em luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
+                    "Mong các chị em luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc làm việc! ✨",
+                    "Chúc chị em có nụ cười tỏa nắng làm ấm áp cả không gian văn phòng! 😊"
                 ],
                 happiness: [
-                    "Chúc chị có một trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
-                    "Mong chị được bao quanh bởi tình yêu thương và sự che chở! 🤗",
-                    "20/10 - Ngày để chị được yêu thương và được trân trọng như một nàng công chúa! 👸",
-                    "Chúc chị luôn có những khoảnh khắc ngọt ngào bên gia đình và bạn bè! 👨‍👩‍👧‍👦"
+                    "Chúc các chị em có trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
+                    "Mong chị em được bao quanh bởi tình đồng nghiệp thân thiết và yêu thương! 🤗",
+                    "20/10 - Ngày để các chị em được trân trọng như những nàng công chúa trong văn phòng! 👸",
+                    "Chúc chị em luôn có những khoảnh khắc vui vẻ bên đồng nghiệp và gia đình! 👨‍👩‍👧‍👦"
                 ],
                 success: [
-                    "Chúc chị thành công rực rỡ trong sự nghiệp và cuộc sống! 🏆",
-                    "Mong chị đạt được tất cả những ước mơ và hoài bão trong lòng! ⭐",
-                    "Chúc chị luôn tự tin chinh phục mọi đỉnh cao trong cuộc sống! 🚀",
-                    "20/10 này, chúc chị trở thành phiên bản tốt nhất của chính mình! 💪"
+                    "Chúc các chị em thành công rực rỡ trong công việc và thăng tiến không ngừng! 🏆",
+                    "Mong chị em đạt được tất cả mục tiêu nghề nghiệp và ước mơ trong lòng! ⭐",
+                    "Chúc chị em luôn tự tin chinh phục mọi thử thách trong công việc! 🚀",
+                    "20/10 này, chúc chị em trở thành phiên bản chuyên nghiệp nhất của chính mình! 💪"
                 ],
                 health: [
-                    "Chúc chị luôn mạnh khỏe, tràn đầy năng lượng tích cực! 🌟",
-                    "Mong chị có sức khỏe dẻo dai như cây tre Việt Nam! 🎋",
-                    "Chúc chị luôn khỏe mạnh để yêu thương và chăm sóc những người xung quanh! ❤️"
+                    "Chúc các chị em luôn mạnh khỏe để làm việc hiệu quả và vui vẻ! 🌟",
+                    "Mong chị em có sức khỏe dẻo dai, không bị stress công việc! 🎋",
+                    "Chúc chị em cân bằng tốt giữa công việc và sức khỏe! ❤️"
                 ],
                 luck: [
-                    "Chúc chị gặp nhiều may mắn và thuận lợi trên mọi nẻo đường! 🍀",
-                    "Mong chị luôn được thần may mắn chiếu cố và phù hộ! 🌈",
-                    "20/10 - Chúc chị có những điều bất ngờ tuyệt vời trong cuộc sống! 🎁"
+                    "Chúc các chị em gặp nhiều may mắn và cơ hội tốt trong công việc! 🍀",
+                    "Mong chị em luôn được sếp và đồng nghiệp quý mến! 🌈",
+                    "20/10 - Chúc chị em có những bất ngờ tuyệt vời như tăng lương, thăng chức! 🎁"
                 ],
                 special: [
-                    "Phụ nữ như chị chính là món quà quý giá nhất của cuộc đời! 💎",
-                    "Chúc chị mãi mãi là nguồn cảm hứng và động lực cho mọi người xung quanh! 🌺",
-                    "20/10 - Ngày tôn vinh vẻ đẹp, trí tuệ và nhân cách tuyệt vời của chị! 🌹",
-                    "Mong chị luôn tự hào về bản thân và giá trị to lớn mà chị mang lại! 👑",
-                    "Chúc chị là ánh sáng ấm áp, lan tỏa yêu thương đến mọi nơi! 🕯️",
-                    "Phụ nữ Việt Nam như chị chính là niềm tự hào của dân tộc! 🇻🇳"
+                    "Các chị em chính là những viên ngọc quý làm rạng danh công ty! 💎",
+                    "Chúc chị em mãi là nguồn cảm hứng và năng lượng tích cực cho team! 🌺",
+                    "20/10 - Ngày tôn vinh trí tuệ và tài năng của các chị em trong văn phòng! 🌹",
+                    "Mong chị em luôn tự hào về năng lực và đóng góp to lớn cho công ty! 👑",
+                    "Chúc chị em lan tỏa năng lượng tích cực đến toàn bộ văn phòng! 🕯️",
+                    "Phụ nữ văn phòng như các chị em chính là trụ cột của công ty! �"
                 ],
                 poetic: [
-                    "Như cánh hoa anh đào bay trong gió, chúc chị luôn nhẹ nhàng và duyên dáng! 🌸",
-                    "Chúc chị có cuộc sống ngọt ngào như mật ong và thơm như hoa nhài! 🍯",
-                    "Mong chị luôn tỏa sáng như ngôi sao sáng nhất trên bầu trời đêm! ⭐",
-                    "20/10 - Chúc chị có trái tim ấm áp như mặt trời và tâm hồn trong veo như suối nguồn! 🌞"
+                    "Như cánh hoa anh đào, chúc chị em luôn nhẹ nhàng xử lý mọi công việc! 🌸",
+                    "Chúc chị em có những ngày làm việc ngọt ngào và thành quả như mật ong! 🍯",
+                    "Mong chị em tỏa sáng như ngôi sao trong team work! ⭐",
+                    "20/10 - Chúc chị em có tinh thần ấm áp như mặt trời soi sáng văn phòng! 🌞"
                 ]
             };
 
