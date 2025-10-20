@@ -6,50 +6,50 @@ function getRandomWish()
 {
     $wishes = [
         // Lời chúc về vẻ đẹp - văn phòng
-        "Chúc các chị em trong văn phòng luôn xinh đẹp như hoa sen trong nắng mai! 🌸",
-        "20/10 này, chúc chị em luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
-        "Mong các chị em luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc làm việc! ✨",
-        "Chúc chị em có nụ cười tỏa nắng làm ấm áp cả không gian văn phòng! 😊",
+        "Chúc các BÉ ÊU trong văn phòng luôn xinh đẹp như hoa sen trong nắng mai! 🌸",
+        "20/10 này, chúc BÉ ÊU luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
+        "Mong các BÉ ÊU luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc làm việc! ✨",
+        "Chúc BÉ ÊU có nụ cười tỏa nắng làm ấm áp cả không gian văn phòng! 😊",
 
         // Lời chúc về hạnh phúc - đồng nghiệp
-        "Chúc các chị em có trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
-        "Mong chị em được bao quanh bởi tình đồng nghiệp thân thiết và yêu thương! 🤗",
-        "20/10 - Ngày để các chị em được trân trọng như những nàng công chúa trong văn phòng! 👸",
-        "Chúc chị em luôn có những khoảnh khắc vui vẻ bên đồng nghiệp và gia đình! 👨‍👩‍👧‍👦",
+        "Chúc các BÉ ÊU có trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
+        "Mong BÉ ÊU được bao quanh bởi tình đồng nghiệp thân thiết và yêu thương! 🤗",
+        "20/10 - Ngày để các BÉ ÊU được trân trọng như những nàng công chúa trong văn phòng! 👸",
+        "Chúc BÉ ÊU luôn có những khoảnh khắc vui vẻ bên đồng nghiệp và gia đình! 👨‍👩‍👧‍👦",
 
         // Lời chúc về sự nghiệp
-        "Chúc các chị em thành công rực rỡ trong công việc và thăng tiến không ngừng! 🏆",
-        "Mong chị em đạt được tất cả mục tiêu nghề nghiệp và ước mơ trong lòng! ⭐",
-        "Chúc chị em luôn tự tin chinh phục mọi thử thách trong công việc! 🚀",
-        "20/10 này, chúc chị em trở thành phiên bản chuyên nghiệp nhất của chính mình! 💪",
+        "Chúc các BÉ ÊU thành công rực rỡ trong công việc và thăng tiến không ngừng! 🏆",
+        "Mong BÉ ÊU đạt được tất cả mục tiêu nghề nghiệp và ước mơ trong lòng! ⭐",
+        "Chúc BÉ ÊU luôn tự tin chinh phục mọi thử thách trong công việc! 🚀",
+        "20/10 này, chúc BÉ ÊU trở thành phiên bản chuyên nghiệp nhất của chính mình! 💪",
 
         // Lời chúc về sức khỏe
-        "Chúc các chị em luôn mạnh khỏe để làm việc hiệu quả và vui vẻ! 🌟",
-        "Mong chị em có sức khỏe dẻo dai, không bị stress công việc! 🎋",
-        "Chúc chị em cân bằng tốt giữa công việc và sức khỏe! ❤️",
+        "Chúc các BÉ ÊU luôn mạnh khỏe để làm việc hiệu quả và vui vẻ! 🌟",
+        "Mong BÉ ÊU có sức khỏe dẻo dai, không bị stress công việc! 🎋",
+        "Chúc BÉ ÊU cân bằng tốt giữa công việc và sức khỏe! ❤️",
 
         // Lời chúc về may mắn
-        "Chúc các chị em gặp nhiều may mắn và cơ hội tốt trong công việc! 🍀",
-        "Mong chị em luôn được sếp và đồng nghiệp quý mến! 🌈",
-        "20/10 - Chúc chị em có những bất ngờ tuyệt vời như tăng lương, thăng chức! 🎁",
+        "Chúc các BÉ ÊU gặp nhiều may mắn và cơ hội tốt trong công việc! 🍀",
+        "Mong BÉ ÊU luôn được sếp và đồng nghiệp quý mến! 🌈",
+        "20/10 - Chúc BÉ ÊU có những bất ngờ tuyệt vời như tăng lương, thăng chức! 🎁",
 
         // Lời chúc đặc biệt về công việc
-        "Các chị em chính là những viên ngọc quý làm rạng danh công ty! 💎",
-        "Chúc chị em mãi là nguồn cảm hứng và năng lượng tích cực cho team! 🌺",
-        "20/10 - Ngày tôn vinh trí tuệ và tài năng của các chị em trong văn phòng! 🌹",
-        "Mong chị luôn tự hào về bản thân và giá trị to lớn mà chị mang lại! �",
-        "Chúc chị em lan tỏa năng lượng tích cực đến toàn bộ văn phòng! 🕯️",
-        "Phụ nữ văn phòng như các chị em chính là trụ cột của công ty! �",
+        "Các BÉ ÊU chính là những viên ngọc quý làm rạng danh công ty! 💎",
+        "Chúc BÉ ÊU mãi là nguồn cảm hứng và năng lượng tích cực cho team! 🌺",
+        "20/10 - Ngày tôn vinh trí tuệ và tài năng của các BÉ ÊU trong văn phòng! 🌹",
+        "Mong BÉ ÊU luôn tự hào về năng lực và đóng góp to lớn cho công ty! 👑",
+        "Chúc BÉ ÊU lan tỏa năng lượng tích cực đến toàn bộ văn phòng! 🕯️",
+        "Phụ nữ văn phòng như các BÉ ÊU chính là trụ cột của công ty! 🏢",
 
         // Lời chúc thơ mộng - văn phòng
-        "Như cánh hoa anh đào, chúc chị em luôn nhẹ nhàng xử lý mọi công việc! 🌸",
-        "Chúc chị em có những ngày làm việc ngọt ngào và thành quả như mật ong! 🍯",
-        "Mong chị em tỏa sáng như ngôi sao trong team work! ⭐",
-        "20/10 - Chúc chị em có tinh thần ấm áp như mặt trời soi sáng văn phòng! 🌞",
+        "Như cánh hoa anh đào, chúc BÉ ÊU luôn nhẹ nhàng xử lý mọi công việc! 🌸",
+        "Chúc BÉ ÊU có những ngày làm việc ngọt ngào và thành quả như mật ong! 🍯",
+        "Mong BÉ ÊU tỏa sáng như ngôi sao trong team work! ⭐",
+        "20/10 - Chúc BÉ ÊU có tinh thần ấm áp như mặt trời soi sáng văn phòng! 🌞",
 
         // Lời chúc đặc biệt cho đồng nghiệp
-        "Cảm ơn các chị em đã làm văn phòng trở nên ấm áp và thân thiện! 💝",
-        "Chúc chị em luôn là pride của team và niềm tự hào của công ty! �"
+        "Cảm ơn các BÉ ÊU đã làm văn phòng trở nên ấm áp và thân thiện! 💝",
+        "Chúc BÉ ÊU luôn là pride của team và niềm tự hào của công ty! 🏆"
     ];
     return $wishes[array_rand($wishes)];
 }
@@ -382,7 +382,7 @@ if ($page === 'random-wish') {
                                 <div class="wish-card">
                                     <h3 class="text-pink mb-4">
                                         <i class="fas fa-heart text-danger me-2"></i>
-                                        Gửi tặng các chị em trong văn phòng
+                                        Gửi tặng các BÉ ÊU trong văn phòng
                                         <i class="fas fa-heart text-danger ms-2"></i>
                                     </h3>
 
@@ -573,46 +573,46 @@ if ($page === 'random-wish') {
         function getWishByTheme(theme) {
             const allWishes = {
                 beauty: [
-                    "Chúc các chị em trong văn phòng luôn xinh đẹp như hoa sen trong nắng mai! 🌸",
-                    "20/10 này, chúc chị em luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
-                    "Mong các chị em luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc làm việc! ✨",
-                    "Chúc chị em có nụ cười tỏa nắng làm ấm áp cả không gian văn phòng! 😊"
+                    "Chúc các BÉ ÊU trong văn phòng luôn xinh đẹp như hoa sen trong nắng mai! 🌸",
+                    "20/10 này, chúc BÉ ÊU luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
+                    "Mong các BÉ ÊU luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc làm việc! ✨",
+                    "Chúc BÉ ÊU có nụ cười tỏa nắng làm ấm áp cả không gian văn phòng! 😊"
                 ],
                 happiness: [
-                    "Chúc các chị em có trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
-                    "Mong chị em được bao quanh bởi tình đồng nghiệp thân thiết và yêu thương! 🤗",
-                    "20/10 - Ngày để các chị em được trân trọng như những nàng công chúa trong văn phòng! 👸",
-                    "Chúc chị em luôn có những khoảnh khắc vui vẻ bên đồng nghiệp và gia đình! 👨‍👩‍👧‍👦"
+                    "Chúc các BÉ ÊU có trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
+                    "Mong BÉ ÊU được bao quanh bởi tình đồng nghiệp thân thiết và yêu thương! 🤗",
+                    "20/10 - Ngày để các BÉ ÊU được trân trọng như những nàng công chúa trong văn phòng! 👸",
+                    "Chúc BÉ ÊU luôn có những khoảnh khắc vui vẻ bên đồng nghiệp và gia đình! 👨‍👩‍👧‍👦"
                 ],
                 success: [
-                    "Chúc các chị em thành công rực rỡ trong công việc và thăng tiến không ngừng! 🏆",
-                    "Mong chị em đạt được tất cả mục tiêu nghề nghiệp và ước mơ trong lòng! ⭐",
-                    "Chúc chị em luôn tự tin chinh phục mọi thử thách trong công việc! 🚀",
-                    "20/10 này, chúc chị em trở thành phiên bản chuyên nghiệp nhất của chính mình! 💪"
+                    "Chúc các BÉ ÊU thành công rực rỡ trong công việc và thăng tiến không ngừng! 🏆",
+                    "Mong BÉ ÊU đạt được tất cả mục tiêu nghề nghiệp và ước mơ trong lòng! ⭐",
+                    "Chúc BÉ ÊU luôn tự tin chinh phục mọi thử thách trong công việc! 🚀",
+                    "20/10 này, chúc BÉ ÊU trở thành phiên bản chuyên nghiệp nhất của chính mình! 💪"
                 ],
                 health: [
-                    "Chúc các chị em luôn mạnh khỏe để làm việc hiệu quả và vui vẻ! 🌟",
-                    "Mong chị em có sức khỏe dẻo dai, không bị stress công việc! 🎋",
-                    "Chúc chị em cân bằng tốt giữa công việc và sức khỏe! ❤️"
+                    "Chúc các BÉ ÊU luôn mạnh khỏe để làm việc hiệu quả và vui vẻ! 🌟",
+                    "Mong BÉ ÊU có sức khỏe dẻo dai, không bị stress công việc! 🎋",
+                    "Chúc BÉ ÊU cân bằng tốt giữa công việc và sức khỏe! ❤️"
                 ],
                 luck: [
-                    "Chúc các chị em gặp nhiều may mắn và cơ hội tốt trong công việc! 🍀",
-                    "Mong chị em luôn được sếp và đồng nghiệp quý mến! 🌈",
-                    "20/10 - Chúc chị em có những bất ngờ tuyệt vời như tăng lương, thăng chức! 🎁"
+                    "Chúc các BÉ ÊU gặp nhiều may mắn và cơ hội tốt trong công việc! 🍀",
+                    "Mong BÉ ÊU luôn được sếp và đồng nghiệp quý mến! 🌈",
+                    "20/10 - Chúc BÉ ÊU có những bất ngờ tuyệt vời như tăng lương, thăng chức! 🎁"
                 ],
                 special: [
-                    "Các chị em chính là những viên ngọc quý làm rạng danh công ty! 💎",
-                    "Chúc chị em mãi là nguồn cảm hứng và năng lượng tích cực cho team! 🌺",
-                    "20/10 - Ngày tôn vinh trí tuệ và tài năng của các chị em trong văn phòng! 🌹",
-                    "Mong chị em luôn tự hào về năng lực và đóng góp to lớn cho công ty! 👑",
-                    "Chúc chị em lan tỏa năng lượng tích cực đến toàn bộ văn phòng! 🕯️",
-                    "Phụ nữ văn phòng như các chị em chính là trụ cột của công ty! �"
+                    "Các BÉ ÊU chính là những viên ngọc quý làm rạng danh công ty! 💎",
+                    "Chúc BÉ ÊU mãi là nguồn cảm hứng và năng lượng tích cực cho team! 🌺",
+                    "20/10 - Ngày tôn vinh trí tuệ và tài năng của các BÉ ÊU trong văn phòng! 🌹",
+                    "Mong BÉ ÊU luôn tự hào về năng lực và đóng góp to lớn cho công ty! 👑",
+                    "Chúc BÉ ÊU lan tỏa năng lượng tích cực đến toàn bộ văn phòng! 🕯️",
+                    "Phụ nữ văn phòng như các BÉ ÊU chính là trụ cột của công ty! 🏢"
                 ],
                 poetic: [
-                    "Như cánh hoa anh đào, chúc chị em luôn nhẹ nhàng xử lý mọi công việc! 🌸",
-                    "Chúc chị em có những ngày làm việc ngọt ngào và thành quả như mật ong! 🍯",
-                    "Mong chị em tỏa sáng như ngôi sao trong team work! ⭐",
-                    "20/10 - Chúc chị em có tinh thần ấm áp như mặt trời soi sáng văn phòng! 🌞"
+                    "Như cánh hoa anh đào, chúc BÉ ÊU luôn nhẹ nhàng xử lý mọi công việc! 🌸",
+                    "Chúc BÉ ÊU có những ngày làm việc ngọt ngào và thành quả như mật ong! 🍯",
+                    "Mong BÉ ÊU tỏa sáng như ngôi sao trong team work! ⭐",
+                    "20/10 - Chúc BÉ ÊU có tinh thần ấm áp như mặt trời soi sáng văn phòng! 🌞"
                 ]
             };
 

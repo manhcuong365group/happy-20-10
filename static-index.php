@@ -5,11 +5,11 @@ if (!function_exists('getRandomWish')) {
     function getRandomWish()
     {
         $wishes = [
-            "Chúc chị luôn xinh đẹp, hạnh phúc và thành công! 🌸",
-            "20/10 này chúc chị luôn tươi trẻ và rạng rỡ! ✨",
-            "Gửi chị những lời chúc tốt đẹp nhất nhân ngày Phụ nữ Việt Nam! 💐",
-            "Chúc chị có một ngày 20/10 thật ý nghĩa và vui vẻ! 🌺",
-            "Mong chị luôn được yêu thương và che chở! 💖"
+            "Chúc BÉ ÊU luôn xinh đẹp, hạnh phúc và thành công! 🌸",
+            "20/10 này chúc BÉ ÊU luôn tươi trẻ và rạng rỡ! ✨",
+            "Gửi BÉ ÊU những lời chúc tốt đẹp nhất nhân ngày Phụ nữ Việt Nam! 💐",
+            "Chúc BÉ ÊU có một ngày 20/10 thật ý nghĩa và vui vẻ! 🌺",
+            "Mong BÉ ÊU luôn được yêu thương và che chở! 💖"
         ];
         return $wishes[array_rand($wishes)];
     }
