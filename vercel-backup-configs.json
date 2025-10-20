@@ -1,0 +1,60 @@
+{
+  "config_1_stable": {
+    "builds": [
+      {
+        "src": "index.php",
+        "use": "vercel-php@0.7.0"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.php"
+      }
+    ]
+  },
+
+  "config_2_latest": {
+    "builds": [
+      {
+        "src": "index.php",
+        "use": "vercel-php@0.7.1"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.php"
+      }
+    ]
+  },
+
+  "config_3_alternative": {
+    "builds": [
+      {
+        "src": "index.php",
+        "use": "vercel-php"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.php"
+      }
+    ]
+  },
+
+  "config_4_functions": {
+    "functions": {
+      "index.php": {
+        "runtime": "vercel-php@0.7.0"
+      }
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/api/index.php"
+      }
+    ]
+  }
+}
