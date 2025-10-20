@@ -306,25 +306,25 @@ if ($page === 'random-wish') {
                             <div class="col-md-6 mb-4">
                                 <div class="wish-card">
                                     <h5><i class="fas fa-heart text-danger me-2"></i>Chúc mừng ngày Phụ nữ</h5>
-                                    <p>"Chúc các chị, các cô luôn xinh đẹp, hạnh phúc và thành công trong cuộc sống!"</p>
+                                    <p>"Chúc các BÉ ÊU, các cô luôn xinh đẹp, hạnh phúc và thành công trong cuộc sống!"</p>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="wish-card">
                                     <h5><i class="fas fa-star text-warning me-2"></i>Tỏa sáng mãi</h5>
-                                    <p>"20/10 này chúc chị luôn tươi trẻ và rạng rỡ như những bông hoa!"</p>
+                                    <p>"20/10 này chúc BÉ ÊU luôn tươi trẻ và rạng rỡ như những bông hoa!"</p>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="wish-card">
                                     <h5><i class="fas fa-flower text-pink me-2"></i>Như hoa thơm</h5>
-                                    <p>"Gửi chị những lời chúc tốt đẹp nhất nhân ngày Phụ nữ Việt Nam!"</p>
+                                    <p>"Gửi BÉ ÊU những lời chúc tốt đẹp nhất nhân ngày Phụ nữ Việt Nam!"</p>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="wish-card">
                                     <h5><i class="fas fa-crown text-warning me-2"></i>Nữ hoàng</h5>
-                                    <p>"20/10 - Ngày của những người phụ nữ tuyệt vời như chị!"</p>
+                                    <p>"20/10 - Ngày của những người phụ nữ tuyệt vời như BÉ ÊU!"</p>
                                 </div>
                             </div>
                         </div>
@@ -523,46 +523,46 @@ if ($page === 'random-wish') {
         function getNewWish() {
             const wishes = [
                 // Lời chúc về vẻ đẹp
-                "Chúc chị mãi mãi xinh đẹp như hoa sen trong nắng mai! 🌸",
-                "20/10 này, chúc chị luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
-                "Mong chị luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc! ✨",
-                "Chúc chị có làn da mịn màng như cánh hoa và nụ cười tỏa nắng! 😊",
+                "Chúc BÉ ÊU mãi mãi xinh đẹp như hoa sen trong nắng mai! 🌸",
+                "20/10 này, chúc BÉ ÊU luôn tươi trẻ như đóa hướng dương hướng về mặt trời! 🌻",
+                "Mong BÉ ÊU luôn rạng rỡ và quyến rủ trong mọi khoảnh khắc! ✨",
+                "Chúc BÉ ÊU có làn da mịn màng như cánh hoa và nụ cười tỏa nắng! 😊",
 
                 // Lời chúc về hạnh phúc
-                "Chúc chị có một trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
-                "Mong chị được bao quanh bởi tình yêu thương và sự che chở! 🤗",
-                "20/10 - Ngày để chị được yêu thương và được trân trọng như một nàng công chúa! �",
-                "Chúc chị luôn có những khoảnh khắc ngọt ngào bên gia đình và bạn bè! 👨‍👩‍👧‍👦",
+                "Chúc BÉ ÊU có một trái tim luôn tràn đầy niềm vui và hạnh phúc! 💕",
+                "Mong BÉ ÊU được bao quanh bởi tình yêu thương và sự che chở! 🤗",
+                "20/10 - Ngày để BÉ ÊU được yêu thương và được trân trọng như một nàng công chúa! �",
+                "Chúc BÉ ÊU luôn có những khoảnh khắc ngọt ngào bên gia đình và bạn bè! 👨‍👩‍👧‍👦",
 
                 // Lời chúc về sự nghiệp
-                "Chúc chị thành công rực rỡ trong sự nghiệp và cuộc sống! �",
-                "Mong chị đạt được tất cả những ước mơ và hoài bão trong lòng! ⭐",
-                "Chúc chị luôn tự tin chinh phục mọi đỉnh cao trong cuộc sống! 🚀",
-                "20/10 này, chúc chị trở thành phiên bản tốt nhất của chính mình! �",
+                "Chúc BÉ ÊU thành công rực rỡ trong sự nghiệp và cuộc sống! �",
+                "Mong BÉ ÊU đạt được tất cả những ước mơ và hoài bão trong lòng! ⭐",
+                "Chúc BÉ ÊU luôn tự tin chinh phục mọi đỉnh cao trong cuộc sống! 🚀",
+                "20/10 này, chúc BÉ ÊU trở thành phiên bản tốt nhất của chính mình! �",
 
                 // Lời chúc về sức khỏe
-                "Chúc chị luôn mạnh khỏe, tràn đầy năng lượng tích cực! 🌟",
-                "Mong chị có sức khỏe dẻo dai như cây tre Việt Nam! 🎋",
-                "Chúc chị luôn khỏe mạnh để yêu thương và chăm sóc những người xung quanh! ❤️",
+                "Chúc BÉ ÊU luôn mạnh khỏe, tràn đầy năng lượng tích cực! 🌟",
+                "Mong BÉ ÊU có sức khỏe dẻo dai như cây tre Việt Nam! 🎋",
+                "Chúc BÉ ÊU luôn khỏe mạnh để yêu thương và chăm sóc những người xung quanh! ❤️",
 
                 // Lời chúc về may mắn
-                "Chúc chị gặp nhiều may mắn và thuận lợi trên mọi nẻo đường! 🍀",
-                "Mong chị luôn được thần may mắn chiếu cố và phù hộ! 🌈",
-                "20/10 - Chúc chị có những điều bất ngờ tuyệt vời trong cuộc sống! 🎁",
+                "Chúc BÉ ÊU gặp nhiều may mắn và thuận lợi trên mọi nẻo đường! 🍀",
+                "Mong BÉ ÊU luôn được thần may mắn chiếu cố và phù hộ! 🌈",
+                "20/10 - Chúc BÉ ÊU có những điều bất ngờ tuyệt vời trong cuộc sống! 🎁",
 
                 // Lời chúc đặc biệt và ý nghĩa
-                "Phụ nữ như chị chính là món quà quý giá nhất của cuộc đời! 💎",
-                "Chúc chị mãi mãi là nguồn cảm hứng và động lực cho mọi người xung quanh! 🌺",
-                "20/10 - Ngày tôn vinh vẻ đẹp, trí tuệ và nhân cách tuyệt vời của chị! 🌹",
-                "Mong chị luôn tự hào về bản thân và giá trị to lớn mà chị mang lại! �",
-                "Chúc chị là ánh sáng ấm áp, lan tỏa yêu thương đến mọi nơi! 🕯️",
-                "Phụ nữ Việt Nam như chị chính là niềm tự hào của dân tộc! 🇻🇳",
+                "Phụ nữ như BÉ ÊU chính là món quà quý giá nhất của cuộc đời! 💎",
+                "Chúc BÉ ÊU mãi mãi là nguồn cảm hứng và động lực cho mọi người xung quanh! 🌺",
+                "20/10 - Ngày tôn vinh vẻ đẹp, trí tuệ và nhân cách tuyệt vời của BÉ ÊU! 🌹",
+                "Mong BÉ ÊU luôn tự hào về bản thân và giá trị to lớn mà BÉ ÊU mang lại! �",
+                "Chúc BÉ ÊU là ánh sáng ấm áp, lan tỏa yêu thương đến mọi nơi! 🕯️",
+                "Phụ nữ Việt Nam như BÉ ÊU chính là niềm tự hào của dân tộc! 🇻🇳",
 
                 // Lời chúc thơ mộng
-                "Như cánh hoa anh đào bay trong gió, chúc chị luôn nhẹ nhàng và duyên dáng! 🌸",
-                "Chúc chị có cuộc sống ngọt ngào như mật ong và thơm như hoa nhài! 🍯",
-                "Mong chị luôn tỏa sáng như ngôi sao sáng nhất trên bầu trời đêm! ⭐",
-                "20/10 - Chúc chị có trái tim ấm áp như mặt trời và tâm hồn trong veo như suối nguồn! 🌞"
+                "Như cánh hoa anh đào bay trong gió, chúc BÉ ÊU luôn nhẹ nhàng và duyên dáng! 🌸",
+                "Chúc BÉ ÊU có cuộc sống ngọt ngào như mật ong và thơm như hoa nhài! 🍯",
+                "Mong BÉ ÊU luôn tỏa sáng như ngôi sao sáng nhất trên bầu trời đêm! ⭐",
+                "20/10 - Chúc BÉ ÊU có trái tim ấm áp như mặt trời và tâm hồn trong veo như suối nguồn! 🌞"
             ];
 
             const randomWish = wishes[Math.floor(Math.random() * wishes.length)];

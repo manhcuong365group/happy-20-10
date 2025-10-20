@@ -290,8 +290,7 @@
 
             <p class="message-text">
                 <strong style="color: #ff6b9d;">
-                    Chúc các chị em luôn tràn đầy sức khỏe, hạnh phúc, thành công trong cuộc sống
-                    và mãi mãi tỏa sáng như những ngôi sao!
+                    {{ $randomWish }}
                 </strong>
             </p>
         </div>

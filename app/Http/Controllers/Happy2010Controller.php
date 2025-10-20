@@ -32,6 +32,21 @@ class Happy2010Controller extends Controller
             ]
         ];
 
+        // Lời chúc ngẫu nhiên hay và ý nghĩa
+        $randomWishes = [
+            "Chúc các chị em luôn tỏa sáng như những viên kim cương, mạnh mẽ và kiên cường! 💎",
+            "Mong các chị em mãi mãi xinh đẹp như hoa sen, thanh cao và thuần khiết! 🌸",
+            "Chúc chị em luôn hạnh phúc như nàng công chúa trong chính cuộc đời mình! 👸",
+            "Mong các chị em thành công rực rỡ và đạt được tất cả ước mơ trong lòng! ⭐",
+            "Chúc chị em luôn khỏe mạnh, vui vẻ và tràn đầy năng lượng tích cực! 🌟",
+            "Mong các chị em được yêu thương, trân trọng và che chở suốt đời! 💕",
+            "Chúc chị em luôn tự tin, duyên dáng và quyến rũ trong mọi khoảnh khắc! ✨",
+            "Mong các chị em có cuộc sống ngọt ngào như mật ong và thơm như hoa nhài! 🍯"
+        ];
+
+        // Chọn lời chúc ngẫu nhiên
+        $randomWish = $randomWishes[array_rand($randomWishes)];
+
         $specialMessages = [
             "🎉 Chúc chị em luôn xinh đẹp và hạnh phúc! 🎉",
             "🌟 Phụ nữ Việt Nam - Tự hào và tự tin! 🌟",
@@ -42,7 +57,7 @@ class Happy2010Controller extends Controller
             "💖 Yêu và trân trọng tất cả phụ nữ Việt Nam! 💖"
         ];
 
-        return view('happy-20-10', compact('wishes', 'specialMessages'));
+        return view('happy-20-10', compact('wishes', 'specialMessages', 'randomWish'));
     }
 
     public function getRandomWish()
