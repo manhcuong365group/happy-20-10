@@ -11,7 +11,7 @@
         "vercel-build": "composer install --optimize-autoloader --no-dev && php artisan config:cache && php artisan route:cache && vite build"
     },
     "engines": {
-        "node": "18.x"
+        "node": "22.x"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
